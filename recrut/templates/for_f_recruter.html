@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для рекрутеров</title>
+</head>
+<body>
+<h1>Enter user information</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+          {{ form }}
+        </table>
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>

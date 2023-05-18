@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>List of Users</h2>
+<table>
+  <tr><th>id</th><th>First Name</th><th>Second Name</th></tr>
+  {% for person in persons %}
+  <tr><td>{{ person.id }}</td>
+      <td>{{ person.f_name }}</td>
+      <td>{{ person.s_name }}</td>
+  </tr>
+  {%endfor%}
+</table>
+<input type="button" value="Return main page" onClick='location.href="http://127.0.0.1:8000/"'>
+</body>
+</html>
